@@ -1,0 +1,43 @@
+#emails{
+    position: relative;
+    left: 20px;
+    
+}
+
+#Mancio{
+    position: absolute;
+    left: 0;
+    top: 100px;
+    font-size: x-large;
+}
+#Law{
+    position: absolute;
+    left: 0;
+    top: 150px;
+    font-size: x-large;
+}
+#Nat{
+    position: absolute;
+    right: 0;
+    top: 100px;
+    font-size: x-large;
+}
+#Rod{
+    position: absolute;
+    right: 0;
+    top: 150px;
+    font-size: x-large;
+}
+#copy{
+    position: relative;
+}
+#copyright{
+    position: absolute;
+    bottom: 10px;
+    font-size: large;
+    left: 570px;
+}
+footer{
+    width: 100%;
+    height: auto;
+}
