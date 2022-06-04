@@ -1,25 +1,14 @@
-import SobreNos from "./componentes/sobreNos";
-import Header from "./Header";
-import Footer from "./componentes/Footer";
+import SobreNos from './componentes/sobreNos'
 
-
-
-
-export default function Sobre(){
-
-    return (
-        <>
-           <div className="App">
-            
-            <div>
-            <SobreNos/>
-            </div>
-            <div>
-            
-            </div>
-
-             </div> 
-
-        </>
-    )
+export default function Sobre() {
+  return (
+    <>
+      <div className='App'>
+        <div>
+          <SobreNos />
+        </div>
+        <div></div>
+      </div>
+    </>
+  )
 }

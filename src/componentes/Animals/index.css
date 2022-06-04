@@ -1,69 +1,63 @@
-.geral{
-    background-color: white;
-    
+.geral {
+  background-color: white;
 }
 
-.h1-color{
-    text-align: center;
-    background-color: white;
-    color: darkorchid;
+.h1-color {
+  text-align: center;
+  background-color: white;
+  color: darkorchid;
 }
 
-
-.grid-container{
-    
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 20px;
-    background-color: white;
-    width: 60%;
-    padding-left: 20%;
-    padding-bottom: 5%;
-    
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+  background-color: white;
+  width: 60%;
+  padding-left: 20%;
+  padding-bottom: 5%;
 }
 
-.grid-item{
-    position: relative;
-display: flex;
-background-color: rgb(217, 183, 228);
-border: 4px solid;
-padding: 30px;
-justify-content: center;
-
+.grid-item {
+  position: relative;
+  display: flex;
+  background-color: rgb(217 183 228);
+  border: 4px solid;
+  padding: 30px;
+  justify-content: center;
 }
 
-.grid-item:hover{
-    filter: brightness(0.8);
+.grid-item:hover {
+  filter: brightness(0.8);
 }
 
-.petName{
-    position: absolute;
-    top: -25px;
-
+.petName {
+  position: absolute;
+  top: -25px;
 }
 
-.imgPets{
-    display: flex;
-    width: 200px;
-    height: 200px;
-   
+.imgPets {
+  display: flex;
+  width: 200px;
+  height: 200px;
 }
 
-.petGenero{
-    position: absolute;
-    bottom: -20px;
-    right: 0;
+.petGenero {
+  position: absolute;
+  bottom: -20px;
+  right: 0;
 }
 
-.macho{
-    color: darkblue;
+.macho {
+  color: darkblue;
 }
 
-.femea{
-    color: darkmagenta;
+.femea {
+  color: darkmagenta;
 }
-.ageGroup{
-    position: absolute;
-    bottom: -20px;
-    left: 0;
-    }
+
+.ageGroup {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+}

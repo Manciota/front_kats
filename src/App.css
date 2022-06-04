@@ -1,47 +1,28 @@
-.App {
-  
-  
-}
-
-.culado{
+.culado {
   background-image: url(./imagens/quadriculado.png);
   text-align: center;
-  
 }
 
-
-p{
+p {
   font-size: 30px;
-  
- 
   padding-left: 10%;
   padding-right: 10%;
   word-spacing: 10px;
 }
 
-.gato-bottom{
-  /*width: 20%;
-  padding-left: 50%;*/
-  
-  
-  
-}
-
-.footer{
+.footer {
   text-align: center;
 }
 
-.gatoFooter{
+.gatoFooter {
   width: 15%;
   padding-top: 3%;
   padding-bottom: 3%;
   height: 230px;
-  
 }
 
-.branco{
-  
-  background-color:white;
+.branco {
+  background-color: white;
   width: 100%;
   opacity: 0.95;
   border-radius: 35%;
@@ -78,6 +59,7 @@ p{
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
