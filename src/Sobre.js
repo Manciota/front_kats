@@ -10,12 +10,12 @@ export default function Sobre(){
     return (
         <>
            <div className="App">
-            <Header/>
+            
             <div>
             <SobreNos/>
             </div>
             <div>
-            <Footer/>
+            
             </div>
 
              </div> 

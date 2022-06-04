@@ -10,12 +10,12 @@ import SobreNos from './componentes/sobreNos';
 function App() {
   return (
     <div className="App">
-      <Header/>
+      
       <div>
         <Content/>
       </div>
       <div>
-        <Footer/>
+        
       </div>
 
       </div>
