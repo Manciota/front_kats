@@ -15,7 +15,8 @@
   .gatoTop1{
     position: absolute;
     left: 0;
-    top: 130px;
+    
+    top: 160px;
   }
 
   .adotar1{
@@ -37,5 +38,5 @@
   }
 
   #artigo2{
-      
+      background-color: lightpink;
   }

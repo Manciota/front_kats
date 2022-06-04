@@ -1,4 +1,7 @@
 import { useState, useEffect } from "react"
+import './index.css'
+import {BsGenderMale, BsGenderFemale} from "react-icons/bs"
+
 
 
 export default function Animals(){
@@ -24,15 +27,31 @@ useEffect(( ) => {
 
     return(
         <>
-        <h1>
-           hhhhh
+        <div className = "geral">
+        <h1 className="h1-color">
+           Nossos Fofoletes
         </h1>
+        <div className="grid-container">
         {pets.map(pet => (
-            <div key={pet.id}>
-        <h2> {pet.name}</h2>
-        <img src={pet.image}></img>
-        </div>
+            <div className="grid-item" key={pet.id}>
+        <h2 className="petName"> {pet.name}</h2> 
+        <img className="imgPets" src={pet.image}></img>
+        <h2 className = "ageGroup"> {pet.age_group} </h2>
+        <h2 className = "petGenero">
+        {pet.gender.toLowerCase() === "macho" ? (
+            <BsGenderMale className="macho" size={30} />
+        ) : (
+            <BsGenderFemale className="femea" size={30}/>
+        )}
+        </h2>
+    
+    
+            </div>
         ))}
+
+        </div>
+
+        </div>
         </>
     )
 }

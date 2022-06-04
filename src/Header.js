@@ -7,9 +7,10 @@ import { Link } from 'react-router-dom';
 export default function Header(){
     return(
         <>
+        <div className = "back">
         <header>
             <div id="cabecalho">
-         <div className="logo"> Mia Khats <FaPaw/></div> 
+         <Link className="logo2" to="/"><div className="logo"> Mia Khats <FaPaw/></div> </Link>
          </div>
          <div id="menu1">
          
@@ -25,6 +26,8 @@ export default function Header(){
 
            <div>
         <img className="gatao" src={require('./imagens/gato2.png')}/>
+      </div>
+
       </div>
 
          </>   

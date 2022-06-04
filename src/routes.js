@@ -4,6 +4,7 @@ import App from "./App"
 import Animals from './componentes/Animals'
 import Header from "./Header"
 import Footer from "./componentes/Footer"
+import './header.css'
 
 export const Routes = () => {
     return(

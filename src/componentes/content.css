@@ -9,16 +9,17 @@
 }
 .gatoTop{
     width: 300px;
-    height: 300px;
+    height: 500px;
     position: absolute;
-    left: 100px;
-    top: -150px;
+    left: 60px;
+    top: -250px;
 
 }
 #artigo{
     position: relative;
     width: 100%;
     height: auto;
+    
 }
 
 .adotar{

@@ -12,19 +12,18 @@ export default function SobreNos(){
             </div>
             <div>
                 <h1 className="adotar1">
-                Porque Adotar?
+                Mia Khats
                 </h1>
-          <p id="texto1"> Todos os pets merecem uma vida digna, regada com muito amor e proteção. Por esse motivo, ao concretizar uma adoção responsável você está proporcionado uma vida de mais qualidade para o pet.
-Vários estudos já mostraram o bem que um pet faz à saúde das pessoas. Além disso, ter um animalzinho em casa resulta em passeios que estimulam os exercícios, melhoram a pressão sanguínea e evita que o dono apresente indícios de depressão, ansiedade ou estresse.
-Ao adotar o animal de um abrigo você estará, automaticamente, salvando mais de uma vida, pois o espaço do seu novo melhor amigo será disponibilizado a outro animal de rua que será resgatado.
+          <p id="texto1"> Nosso projeto consiste em ajudar gatos a encontrarem um humano e deixarem os abrigos e lares temporários por lares saudáveis e amorosos.
+Nós publicamos as fotos dos animais e nos comprometemos em entregá-los saudáveis e vacinados para os adotantes que devem se comprometer com as próximas vacinas se houver e com o bem estar do animal.
 </p>
             </div>
             <div>
             <h1 className="doe">
                 Doe!!
                 </h1>
-          <p id="texto2"> Todos os pets merecem uma vida digna, regada com muito amor e proteção. Por esse motivo, ao concretizar uma adoção responsável você está proporcionado uma vida de mais qualidade para o pet.
-Vários estudos já mostraram o bem que um pet faz à saúde das pessoas. Além disso, ter um animalzinho em casa resulta em passeios que estimulam os exercícios, melhoram a pressão sanguínea e evita que o dono apresente indícios de depressão, ansiedade ou estresse.
+          <p id="texto2"> Se não puder adotar nenhum gato, mas quiser nos ajudar com a causa, aceitamos doaçoes para a compra de rações, pagamentos de vacinas e outros custos para o funcionamento do projeto.
+Aceitamos pix: 99966699966
 
 </p>
             </div>

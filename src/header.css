@@ -12,9 +12,11 @@ header{
     flex-direction: row;
     align-items: center;
     background-color:lightpink;
-    width: 100%;
     height: auto;
+    
 }
+
+
 
 nav{
     /*padding-left: 1000%;*/
@@ -26,6 +28,10 @@ nav{
     
 }
 
+.logo2{
+    text-decoration: none;
+}
+
 .li{
     display: inline;
     padding-left: 100px;
@@ -33,6 +39,7 @@ nav{
     color: darkmagenta;
     font-family: cursive;
     text-decoration: none;
+    
 }
 .menu1{
     display: flex;
