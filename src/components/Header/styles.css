@@ -1,0 +1,26 @@
+.logo {
+  font-size: 50px;
+  font-family: cursive;
+  color: purple;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: lightpink;
+}
+
+.logo2 {
+  text-decoration: none;
+}
+
+.li {
+  display: inline;
+  padding-left: 2rem;
+  font-size: 1.5rem;
+  color: darkmagenta;
+  font-family: cursive;
+  text-decoration: none;
+}

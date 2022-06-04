@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
-import './index.css'
+import './styles.css'
 import { BsGenderMale, BsGenderFemale } from 'react-icons/bs'
 
-export default function Animals() {
+export function Animals() {
   const [pets, setPets] = useState([])
   const fetchPets = async () => {
     try {

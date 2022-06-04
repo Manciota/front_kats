@@ -1,0 +1,25 @@
+.about-us {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 3rem;
+}
+
+.about-us > img {
+  width: 200px;
+  height: 300px;
+}
+
+.about-us > section {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.7rem;
+  max-width: 50vw;
+}
+
+.about-us h1 {
+  font-size: xx-large;
+  color: darkorchid;
+  font-family: cursive;
+}
+

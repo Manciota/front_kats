@@ -1,0 +1,47 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.home > section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.adotar {
+  font-size: xx-large;
+  color: darkorchid;
+  font-family: cursive;
+}
+
+#texto {
+  line-height: 1.7rem;
+  font-size: 1.2rem;
+  padding-right: 2rem;
+}
+
+.gatoTop {
+  width: 300px;
+  height: 500px;
+}
+
+#botao-adotar {
+  background-color: red; /* Green */
+  border-radius: 15px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 22px;
+  bottom: 100px;
+  left: 850px;
+  cursor: pointer;
+}
+
+#botao-adotar:hover {
+  filter: brightness(1.5);
+}
