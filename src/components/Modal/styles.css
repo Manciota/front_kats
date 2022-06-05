@@ -19,7 +19,9 @@
   box-shadow: 0 0.25rem 0.4rem rgb(0 0 0 / 0.04);
   width: 100%;
   max-width: 29rem;
+  max-height: 80vh;
   position: relative;
+  overflow-y: auto;
 }
 
 .container-modal > button {
@@ -38,5 +40,5 @@
 }
 
 .container-modal > h1 {
-  color: white;
+  color: darkorchid;
 }

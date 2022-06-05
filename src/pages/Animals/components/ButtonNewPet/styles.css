@@ -1,29 +1,37 @@
-.adopt-form {
+.create-form {
   display: flex;
   flex-direction: column;
 }
 
-.adopt-form > div {
+.create-form > div {
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
   text-align: left;
-  margin: auto;
+  margin: auto auto 1rem;
   width: 90%;
 }
 
-.adopt-form > div > input {
+.create-form > div > input, select, .custom-file-upload {
   padding: 0.4rem;
   border-radius: 0.2rem;
   border: 2px solid darkorchid;
   transition: ease-in 0.3s;
 }
 
-.adopt-form > div > input:focus {
+.create-form > div > input:focus {
   border: 2px solid blue;
 }
 
-.adopt-form > div > p {
+.create-form > div > p {
   color: red;
-  margin: 0 0 1rem;
+  margin: 0
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.custom-file-upload {
+  cursor: pointer;
 }

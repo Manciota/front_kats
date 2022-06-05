@@ -18,9 +18,14 @@
 
 .li {
   display: inline;
-  padding-left: 2rem;
+  margin-left: 2rem;
   font-size: 1.5rem;
   color: darkmagenta;
   font-family: cursive;
   text-decoration: none;
+  transition: ease-in .1s;
+}
+
+.li:hover {
+  border-bottom: 2px solid darkmagenta;
 }

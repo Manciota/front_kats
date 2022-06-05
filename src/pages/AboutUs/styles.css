@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin: 3rem;
+  margin: auto;
 }
 
 .about-us > img {

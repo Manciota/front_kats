@@ -77,7 +77,7 @@ Made with ❤️ by:
       </a>
     </td>
     <td align="center">
-      <a href="(https://github.com/manciota)">
+      <a href="https://github.com/manciota">
         <img src="https://github.com/manciota.png" width="100px;" alt="Foto do Gabriel Manciota no GitHub"/><br>
         <sub>
           <b>Gabriel Manciota</b>

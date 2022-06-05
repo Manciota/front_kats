@@ -51,25 +51,25 @@ export const ButtonAdopt = ({ pet }) => {
       >
         <form onSubmit={handleSubmit(onSubmit)} className='adopt-form'>
           <div>
-            <label>Nome</label>
+            <label>Nome (*)</label>
             <input {...register('name')} />
             <p>{errors.name?.message}</p>
           </div>
 
           <div>
-            <label>Telefone</label>
+            <label>Telefone (*)</label>
             <input {...register('phone')} maxLength={11} />
             <p>{errors.phone?.message}</p>
           </div>
 
           <div>
-            <label>CPF</label>
+            <label>CPF (*)</label>
             <input {...register('cpf')} maxLength={11} />
             <p>{errors.cpf?.message}</p>
           </div>
 
           <div>
-            <label>Endereço</label>
+            <label>Endereço (*)</label>
             <input {...register('address')} />
             <p>{errors.address?.message}</p>
           </div>

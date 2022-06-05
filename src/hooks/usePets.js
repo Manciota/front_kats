@@ -19,9 +19,22 @@ export const usePets = () => {
   const makeAdoption = useCallback(
     async (adopterInfo) => {
       try {
+        setStatus('loading')
         await AdoptersService.makeAdoption(adopterInfo)
         await getAllPets()
-        setStatus('iddle')
+      } catch {
+        setStatus('error')
+      }
+    },
+    [getAllPets]
+  )
+
+  const createPet = useCallback(
+    async (petInfo) => {
+      try {
+        setStatus('loading')
+        await PetsService.createPet(petInfo)
+        await getAllPets()
       } catch {
         setStatus('error')
       }
@@ -33,5 +46,5 @@ export const usePets = () => {
     getAllPets()
   }, [getAllPets])
 
-  return [pets, status, makeAdoption]
+  return [pets, status, makeAdoption, createPet]
 }

@@ -3,6 +3,7 @@ import { LoadingSpinner } from '../../components/LoadingSpinner'
 import { usePets } from '../../hooks/usePets'
 import { CardsList } from './components/CardsList'
 import './styles.css'
+import { ButtonNewPet } from './components/ButtonNewPet'
 
 export function Animals() {
   const [, status] = usePets()
@@ -14,9 +15,13 @@ export function Animals() {
   }
 
   return (
-    <div className='geral'>
-      <h1 className='h1-color'>Nossos Fofoletes</h1>
+    <main className='geral'>
+      <header>
+        <div />
+        <h1 className='h1-color'>Nossos Fofoletes</h1>
+        <ButtonNewPet />
+      </header>
       {renderByState[status]}
-    </div>
+    </main>
   )
 }

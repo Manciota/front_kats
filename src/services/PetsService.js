@@ -9,8 +9,8 @@ class PetsService {
     return this.httpClient.get('')
   }
 
-  async createPet() {
-    return this.httpClient.post('/create')
+  async createPet(petInfo) {
+    return this.httpClient.post('/create', { body: petInfo })
   }
 }
 
