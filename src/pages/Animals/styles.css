@@ -99,3 +99,12 @@
     margin: 2rem 3rem;
   }
 }
+
+.buttons-footer {
+  display: flex;
+}
+
+.buttons-footer > button:nth-child(1) {
+  width: 100%;
+}
+

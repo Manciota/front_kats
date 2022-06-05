@@ -1,5 +1,6 @@
 import { BsGenderFemale, BsGenderMale } from 'react-icons/bs'
 import { ButtonAdopt } from '../ButtonAdopt'
+import { ButtonDelete } from '../ButtonDelete'
 
 export const CardPet = ({ pet }) => (
   <div className='grid-item'>
@@ -29,7 +30,9 @@ export const CardPet = ({ pet }) => (
       </h2>
     </footer>
 
-    <ButtonAdopt pet={pet} />
-    <button>X</button>
+    <div className='buttons-footer'>
+      <ButtonAdopt pet={pet} />
+      <ButtonDelete pet={pet} />
+    </div>
   </div>
 )

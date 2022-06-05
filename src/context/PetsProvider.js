@@ -15,7 +15,7 @@ export const PetsProvider = ({ children }) => {
         ...pet,
         birthDate:
           pet.birth_date &&
-          new Intl.DateTimeFormat('en-US').format(new Date(pet.birth_date))
+          new Intl.DateTimeFormat('pt-BR').format(new Date(pet.birth_date))
       }))
       setPets(formattedData)
       setStatus('iddle')
