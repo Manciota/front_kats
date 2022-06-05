@@ -30,5 +30,6 @@ export const CardPet = ({ pet }) => (
     </footer>
 
     <ButtonAdopt pet={pet} />
+    <button>X</button>
   </div>
 )
