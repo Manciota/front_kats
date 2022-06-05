@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+# Miakhats Front
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!--- https://shields.io --->
 
-## Available Scripts
+![GitHub repo size](https://img.shields.io/github/repo-size/Manciota/front_kats?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/Manciota/front_kats?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/Manciota/front_kats?style=for-the-badge)
+![Bitbucket open issues](https://img.shields.io/bitbucket/issues/Manciota/front_kats?style=for-the-badge)
+![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/Manciota/front_kats?style=for-the-badge)
 
-In the project directory, you can run:
+<!--- #################### mudar badges #################### --->
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<!--- #################### mudar imagem exemplo #################### --->
+___
+> This is the front-end side of the Miakhats
+___
+## 💻 Prerequisites
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Install LTS Node version.
 
-### `npm test`
+<!--- #################### mudar pré-requisitos  ####################--->
+___
+## 🛠 Tools used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Technologies:
 
-### `npm run build`
+- React (library to create UI)
+- react-hook-form (to manage the states of the forms)
+- yup (helps with the validation in the forms fields)
+- react-icons (library with icons provided)
+- eslint e stylelint (lint)
+ 
+<!--- #################### mudar ferramentas #################### --->
+___
+## 🚀 Installing dev_web-back
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To use, follow the steps:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+git clone https://github.com/Manciota/front_kats.git
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm install
+```
 
-### `npm run eject`
+```bash
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📫 Contribuiting with dev_web-back
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+To contribue with dev_web-back, follow the steps:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Fork this repository.
+2. Create a branch: `git checkout -b <name_branch>`.
+3. Make the changes and confirm: `git commit -m '<message_commit>'`
+4. Send to original repository: `git push origin <main_branch> / <local>`
+5. Send the pull request.
 
-## Learn More
+Alternatively, see the GitHub documentation at [how to create a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
+___
+## 🤝 Contributors
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Made with ❤️ by:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/rodrigorvsn">
+        <img src="https://github.com/rodrigorvsn.png" width="100px;" alt="Foto do Rodrigo Victor no GitHub"/><br>
+        <sub>
+          <b>Rodrigo Victor</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="(https://github.com/manciota)">
+        <img src="https://github.com/manciota.png" width="100px;" alt="Foto do Gabriel Manciota no GitHub"/><br>
+        <sub>
+          <b>Gabriel Manciota</b>
+        </sub>
+      </a>
+    </td>
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+      
+  </tr>
+</table>

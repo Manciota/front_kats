@@ -16,7 +16,7 @@
 }
 
 .button:hover:not(:disabled) {
-  background-color: white;
+  background-color: lightpink;
   color: darkorchid;
   filter: brightness(1.05);
 }

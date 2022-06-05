@@ -23,7 +23,7 @@
   display: flex;
   flex-direction: column;
   border: 4px solid;
-  padding: 0.5rem;
+  padding: 1rem;
   transition: ease-in 0.3s;
 }
 
@@ -39,12 +39,18 @@
 
 .grid-item:hover {
   filter: brightness(0.9);
+  border: 4px solid darkorchid;
 }
 
 .imgPets {
   width: 200px;
   height: 200px;
   margin: auto;
+  transition: ease-in 0.3s;
+}
+
+.imgPets:hover {
+  transform: scale(1.15);
 }
 
 .macho {
@@ -58,12 +64,11 @@
 @media (max-width: 1000px) {
   .grid-container {
     grid-template-columns: auto auto;
-  } 
+  }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .grid-container {
     grid-template-columns: auto;
-  } 
+  }
 }
-

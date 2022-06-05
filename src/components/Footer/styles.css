@@ -13,7 +13,8 @@
   justify-content: space-evenly;
 }
 
-#emails > p, a {
+#emails > p,
+a {
   font-size: 1.2rem;
 }
 
@@ -28,9 +29,8 @@ img {
   height: 5rem;
 }
 
-
 @media (max-width: 600px) {
   #emails {
     grid-template-columns: auto;
-  } 
+  }
 }
