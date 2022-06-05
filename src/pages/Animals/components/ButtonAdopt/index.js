@@ -13,6 +13,7 @@ export const ButtonAdopt = ({ pet }) => {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors, isValid, isDirty }
   } = useForm({
     mode: 'onChange',
@@ -29,18 +30,25 @@ export const ButtonAdopt = ({ pet }) => {
   }
 
   const handleToggleModal = () => {
+    reset()
     setModalOpen((prevState) => !prevState)
   }
 
   return (
     <>
       <Button
-        title={isAdopted ? 'Adotado' : 'Adotar'}
+        title={
+          isAdopted ? `Adotado por ${pet.adopter_name.split(' ')[0]}` : 'Adotar'
+        }
         onClick={handleToggleModal}
         disabled={isAdopted}
       />
 
-      <Modal open={modalOpen} setOpen={setModalOpen} title='Adote seu animal!'>
+      <Modal
+        open={modalOpen}
+        toggleOpen={handleToggleModal}
+        title='Adote seu animal!'
+      >
         <form onSubmit={handleSubmit(onSubmit)} className='adopt-form'>
           <div>
             <label>Nome</label>
@@ -50,13 +58,13 @@ export const ButtonAdopt = ({ pet }) => {
 
           <div>
             <label>Telefone</label>
-            <input {...register('phone')} />
+            <input {...register('phone')} maxLength={11} />
             <p>{errors.phone?.message}</p>
           </div>
 
           <div>
             <label>CPF</label>
-            <input {...register('cpf')} />
+            <input {...register('cpf')} maxLength={11} />
             <p>{errors.cpf?.message}</p>
           </div>
 

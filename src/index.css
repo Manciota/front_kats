@@ -29,3 +29,13 @@ code {
 input, button {
   outline: none;
 }
+
+::-webkit-scrollbar {
+  background-color: lightpink;
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: purple;
+  border-radius: 1.5rem;
+}

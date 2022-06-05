@@ -27,3 +27,10 @@ img {
   width: 5rem;
   height: 5rem;
 }
+
+
+@media (max-width: 600px) {
+  #emails {
+    grid-template-columns: auto;
+  } 
+}

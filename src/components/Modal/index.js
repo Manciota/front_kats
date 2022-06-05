@@ -2,13 +2,13 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import './styles.css'
 
-export function Modal({ title, open, setOpen, children }) {
+export function Modal({ title, open, toggleOpen, children }) {
   if (!open) {
     return null
   }
 
   const handleCloseModal = () => {
-    setOpen((prevState) => !prevState)
+    toggleOpen()
   }
 
   return ReactDOM.createPortal(
