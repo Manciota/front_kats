@@ -29,12 +29,10 @@ export const ButtonNewPet = () => {
 
   const onSubmit = (data) => {
     const formData = new FormData()
+    Object.entries(data).forEach(([key, value]) => {
+      formData.append(key, value)
+    })
     formData.append('image', picture)
-    formData.append('name', data.name)
-    formData.append('breed', data.breed)
-    formData.append('gender', data.gender)
-    formData.append('age_group', data.age_group)
-    formData.append('birth_date', data.birth_date)
     handleToggleModal()
     createPet(formData)
   }
