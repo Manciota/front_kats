@@ -33,7 +33,7 @@ Technologies:
  
 <!--- #################### mudar ferramentas #################### --->
 ___
-## 🚀 Installing dev_web-back
+## 🚀 Installing front_kats
 
 To use, follow the steps:
 
@@ -50,9 +50,9 @@ npm start
 ```
 
 
-## 📫 Contribuiting with dev_web-back
+## 📫 Contribuiting with front_kats
 
-To contribue with dev_web-back, follow the steps:
+To contribue with front_kats, follow the steps:
 
 1. Fork this repository.
 2. Create a branch: `git checkout -b <name_branch>`.
