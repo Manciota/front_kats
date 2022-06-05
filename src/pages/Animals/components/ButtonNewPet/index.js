@@ -28,8 +28,15 @@ export const ButtonNewPet = () => {
   const isDisabled = !isValid || !isDirty || status.loading
 
   const onSubmit = (data) => {
+    const formData = new FormData()
+    formData.append('image', picture)
+    formData.append('name', data.name)
+    formData.append('breed', data.breed)
+    formData.append('gender', data.gender)
+    formData.append('age_group', data.age_group)
+    formData.append('birth_date', data.birth_date)
     handleToggleModal()
-    createPet(data)
+    createPet(formData)
   }
 
   const handleToggleModal = () => {

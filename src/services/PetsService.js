@@ -10,7 +10,7 @@ class PetsService {
   }
 
   async createPet(petInfo) {
-    return this.httpClient.post('/create', { body: petInfo })
+    return this.httpClient.postMultiPart('/create', { body: petInfo })
   }
 }
 

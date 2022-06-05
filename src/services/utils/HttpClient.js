@@ -14,11 +14,17 @@ class HttpClient {
   }
 
   async post(path, options) {
-    console.log(path, options)
     return this.makeRequest(path, {
       method: 'POST',
       body: options?.body,
       headers: options?.headers
+    })
+  }
+
+  async postMultiPart(path, options) {
+    return await fetch(`${this.baseURL}${path}`, {
+      method: 'POST',
+      body: options.body
     })
   }
 
