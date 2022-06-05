@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from 'react'
+import AdoptersService from '../services/AdoptersService'
 import PetsService from '../services/PetsService'
 
 export const usePets = () => {
@@ -15,9 +16,19 @@ export const usePets = () => {
     }
   }, [])
 
+  const makeAdoption = useCallback(async (adopterInfo) => {
+    try {
+      const data = await AdoptersService.makeAdoption(adopterInfo)
+      setPets(data)
+      setStatus('iddle')
+    } catch {
+      setStatus('error')
+    }
+  }, [])
+
   useEffect(() => {
     getAllPets()
   }, [getAllPets])
 
-  return [pets, status]
+  return [pets, status, makeAdoption]
 }

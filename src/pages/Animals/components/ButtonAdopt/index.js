@@ -5,8 +5,10 @@ import { Modal } from '../../../../components/Modal'
 import { yupResolver } from '@hookform/resolvers/yup'
 import { schema } from './adoption.schema'
 import './styles.css'
+import { usePets } from '../../../../hooks/usePets'
 
 export const ButtonAdopt = ({ petId }) => {
+  const [, status, makeAdoption] = usePets()
   const [modalOpen, setModalOpen] = useState(false)
   const {
     register,
@@ -20,7 +22,7 @@ export const ButtonAdopt = ({ petId }) => {
 
   const onSubmit = (data) => {
     handleToggleModal()
-    console.log(data)
+    makeAdoption({ ...data, pet_id: petId })
   }
 
   const handleToggleModal = () => {
@@ -60,7 +62,7 @@ export const ButtonAdopt = ({ petId }) => {
           <Button
             title='Confirmar'
             type='submit'
-            disabled={!isValid || !isDirty}
+            disabled={!isValid || !isDirty || status === 'loading'}
           />
         </form>
       </Modal>

@@ -10,11 +10,13 @@
 }
 
 .button:disabled {
+  background-color: white;
+  color: darkorchid;
   cursor: not-allowed;
 }
 
 .button:hover:not(:disabled) {
-  filter: brightness(1.05);
-  color: darkorchid;
   background-color: white;
+  color: darkorchid;
+  filter: brightness(1.05);
 }
