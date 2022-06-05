@@ -6,8 +6,8 @@ export const Routes = () => (
   <BrowserRouter>
     <Layout>
       <Rotas>
-        {appRoutes.map((item) => (
-          <Route key={item.path} path={item.path} element={item.component} />
+        {appRoutes.map(({ path, component }) => (
+          <Route key={path} path={path} element={component} />
         ))}
       </Rotas>
     </Layout>
