@@ -12,6 +12,10 @@ class PetsService {
   async createPet(petInfo) {
     return this.httpClient.postMultiPart('/create', { body: petInfo })
   }
+
+  async deletePet(petId) {
+    return this.httpClient.delete(`/remove/${petId}`)
+  }
 }
 
 export default new PetsService()

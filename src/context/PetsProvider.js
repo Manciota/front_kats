@@ -50,9 +50,24 @@ export const PetsProvider = ({ children }) => {
     [getAllPets]
   )
 
+  const deletePet = useCallback(
+    async (petId) => {
+      try {
+        setStatus('loading')
+        await PetsService.deletePet(petId)
+        const newPets = pets.filter((pet) => pet.id !== petId)
+        setPets(newPets)
+        setStatus('iddle')
+      } catch {
+        setStatus('error')
+      }
+    },
+    [pets]
+  )
+
   return (
     <PetsContext.Provider
-      value={{ pets, status, getAllPets, makeAdoption, createPet }}
+      value={{ pets, status, getAllPets, makeAdoption, createPet, deletePet }}
     >
       {children}
     </PetsContext.Provider>

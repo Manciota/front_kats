@@ -21,6 +21,12 @@ class HttpClient {
     })
   }
 
+  async delete(path) {
+    return this.makeRequest(path, {
+      method: 'DELETE'
+    })
+  }
+
   async postMultiPart(path, options) {
     return await fetch(`${this.baseURL}${path}`, {
       method: 'POST',
@@ -51,7 +57,7 @@ class HttpClient {
 
     let responseBody = null
     const contentType = response.headers.get('Content-Type')
-    if (contentType.includes('application/json')) {
+    if (contentType?.includes('application/json')) {
       responseBody = await response.json()
     }
 

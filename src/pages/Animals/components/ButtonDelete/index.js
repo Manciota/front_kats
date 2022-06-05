@@ -6,12 +6,12 @@ import { usePets } from '../../../../context/usePets'
 import { BsTrash } from 'react-icons/bs'
 
 export const ButtonDelete = ({ pet }) => {
-  const { makeAdoption } = usePets()
+  const { deletePet } = usePets()
   const [modalOpen, setModalOpen] = useState(false)
 
-  const onSubmit = (data) => {
+  const onConfirm = () => {
     handleToggleModal()
-    makeAdoption({ ...data, pet_id: pet.id })
+    deletePet(pet.id)
   }
 
   const handleToggleModal = () => {
@@ -30,7 +30,7 @@ export const ButtonDelete = ({ pet }) => {
         <h2>Tem certeza que deseja apagar {pet.name}?</h2>
         <div className='button-exclude__container'>
           <Button title='Cancelar' onClick={handleToggleModal} />
-          <Button title='Excluir' onClick={onSubmit} />
+          <Button title='Excluir' onClick={onConfirm} />
         </div>
       </Modal>
     </>
