@@ -19,33 +19,48 @@
 }
 
 .grid-item {
-  position: relative;
-  display: flex;
   background-color: rgb(217 183 228);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
   border: 4px solid;
-  padding: 30px;
-  justify-content: center;
+  padding: 0.5rem;
+  transition: ease-in 0.3s;
+}
+
+.grid-item > header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.grid-item > footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.grid-item > button {
+  border-radius: 1rem;
+  border: 1px solid rgb(217 183 228);
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 1rem 0.5rem;
+  transition: ease-in 0.3s;
+}
+
+.grid-item > button:hover {
+  background-color: darkorchid;
+  filter: brightness(1.05);
+  color: white;
 }
 
 .grid-item:hover {
-  filter: brightness(0.8);
-}
-
-.petName {
-  position: absolute;
-  top: -25px;
+  filter: brightness(0.9);
 }
 
 .imgPets {
-  display: flex;
   width: 200px;
   height: 200px;
-}
-
-.petGenero {
-  position: absolute;
-  bottom: -20px;
-  right: 0;
+  margin: auto;
 }
 
 .macho {
@@ -56,8 +71,15 @@
   color: darkmagenta;
 }
 
-.ageGroup {
-  position: absolute;
-  bottom: -20px;
-  left: 0;
+@media (max-width: 1000px) {
+  .grid-container {
+    grid-template-columns: auto auto;
+  } 
 }
+
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: auto;
+  } 
+}
+

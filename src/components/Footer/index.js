@@ -2,7 +2,7 @@ import './styles.css'
 
 export function Footer() {
   return (
-    <footer>
+    <footer className='footer'>
       <div id='emails'>
         <p>rodrigovictor81@gmail.com</p>
         <p>gamancio22@gmail.com</p>
