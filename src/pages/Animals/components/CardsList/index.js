@@ -1,8 +1,9 @@
-import { usePets } from '../../../../hooks/usePets'
+import { usePets } from '../../../../context/usePets'
 import { CardPet } from '../CardPet'
 
 export const CardsList = () => {
-  const [pets] = usePets([])
+  const { pets } = usePets()
+
   return (
     <div className='grid-container'>
       {pets.map((pet) => (

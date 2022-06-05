@@ -4,12 +4,12 @@ import { Button } from '../../../../components/Button'
 import { Modal } from '../../../../components/Modal'
 import { yupResolver } from '@hookform/resolvers/yup'
 import './styles.css'
-import { usePets } from '../../../../hooks/usePets'
 import { MdPets } from 'react-icons/md'
 import { schema } from './newPet.schema'
+import { usePets } from '../../../../context/usePets'
 
 export const ButtonNewPet = () => {
-  const [, status, , createPet] = usePets()
+  const { status, createPet } = usePets()
   const [modalOpen, setModalOpen] = useState(false)
   const {
     register,

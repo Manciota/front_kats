@@ -5,10 +5,10 @@ import { Modal } from '../../../../components/Modal'
 import { yupResolver } from '@hookform/resolvers/yup'
 import { schema } from './adoption.schema'
 import './styles.css'
-import { usePets } from '../../../../hooks/usePets'
+import { usePets } from '../../../../context/usePets'
 
 export const ButtonAdopt = ({ pet }) => {
-  const [, status, makeAdoption] = usePets()
+  const { status, makeAdoption } = usePets()
   const [modalOpen, setModalOpen] = useState(false)
   const {
     register,

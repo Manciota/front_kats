@@ -1,18 +1,23 @@
+import { useEffect } from 'react'
 import { GenericError } from '../../components/GenericError'
 import { LoadingSpinner } from '../../components/LoadingSpinner'
-import { usePets } from '../../hooks/usePets'
 import { CardsList } from './components/CardsList'
 import './styles.css'
 import { ButtonNewPet } from './components/ButtonNewPet'
+import { usePets } from '../../context/usePets'
 
 export function Animals() {
-  const [, status] = usePets()
+  const { status, getAllPets } = usePets()
 
   const renderByState = {
     iddle: <CardsList />,
     error: <GenericError />,
     loading: <LoadingSpinner />
   }
+
+  useEffect(() => {
+    getAllPets()
+  }, [])
 
   return (
     <main className='geral'>

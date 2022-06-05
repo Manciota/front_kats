@@ -1,8 +1,10 @@
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useState, createContext } from 'react'
 import AdoptersService from '../services/AdoptersService'
 import PetsService from '../services/PetsService'
 
-export const usePets = () => {
+export const PetsContext = createContext()
+
+export const PetsProvider = ({ children }) => {
   const [pets, setPets] = useState([])
   const [status, setStatus] = useState('loading')
 
@@ -42,9 +44,11 @@ export const usePets = () => {
     [getAllPets]
   )
 
-  useEffect(() => {
-    getAllPets()
-  }, [getAllPets])
-
-  return [pets, status, makeAdoption, createPet]
+  return (
+    <PetsContext.Provider
+      value={{ pets, status, getAllPets, makeAdoption, createPet }}
+    >
+      {children}
+    </PetsContext.Provider>
+  )
 }
