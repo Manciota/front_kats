@@ -1,29 +1,22 @@
-import './styles.css'
-import { BsGenderMale, BsGenderFemale } from 'react-icons/bs'
+import { GenericError } from '../../components/GenericError'
+import { LoadingSpinner } from '../../components/LoadingSpinner'
 import { usePets } from '../../hooks/usePets'
+import { CardsList } from './components/CardsList'
+import './styles.css'
 
 export function Animals() {
-  const [pets] = usePets([])
+  const [, status] = usePets()
+
+  const renderByState = {
+    iddle: <CardsList />,
+    error: <GenericError />,
+    loading: <LoadingSpinner />
+  }
 
   return (
     <div className='geral'>
       <h1 className='h1-color'>Nossos Fofoletes</h1>
-      <div className='grid-container'>
-        {pets.map((pet) => (
-          <div className='grid-item' key={pet.id}>
-            <h2 className='petName'> {pet.name}</h2>
-            <img className='imgPets' src={pet.image}></img>
-            <h2 className='ageGroup'> {pet.age_group} </h2>
-            <h2 className='petGenero'>
-              {pet.gender.toLowerCase() === 'macho' ? (
-                <BsGenderMale className='macho' size={30} />
-              ) : (
-                <BsGenderFemale className='femea' size={30} />
-              )}
-            </h2>
-          </div>
-        ))}
-      </div>
+      {renderByState[status]}
     </div>
   )
 }

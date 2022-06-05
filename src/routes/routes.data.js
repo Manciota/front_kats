@@ -1,3 +1,4 @@
+import { GenericError } from '../components/GenericError'
 import { AboutUs } from '../pages/AboutUs'
 import { Animals } from '../pages/Animals'
 import { Home } from '../pages/Home'
@@ -14,5 +15,9 @@ export const appRoutes = [
   {
     path: '/sobre',
     component: <AboutUs />
+  },
+  {
+    path: '*',
+    component: <GenericError />
   }
 ]
