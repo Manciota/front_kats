@@ -16,6 +16,8 @@ export const CardPet = ({ pet }) => (
       }
     ></img>
 
+    {pet.birthDate && <p>{`Nasceu em: ${pet.birthDate}`}</p>}
+
     <footer>
       <h2 className='ageGroup'> {pet.breed} </h2>
       <h2 className='petGenero'>

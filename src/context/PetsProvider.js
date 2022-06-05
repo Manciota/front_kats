@@ -11,7 +11,13 @@ export const PetsProvider = ({ children }) => {
   const getAllPets = useCallback(async () => {
     try {
       const data = await PetsService.getAllPets()
-      setPets(data)
+      const formattedData = data.map((pet) => ({
+        ...pet,
+        birthDate:
+          pet.birth_date &&
+          new Intl.DateTimeFormat('en-US').format(new Date(pet.birth_date))
+      }))
+      setPets(formattedData)
       setStatus('iddle')
     } catch {
       setStatus('error')
