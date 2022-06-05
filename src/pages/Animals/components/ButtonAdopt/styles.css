@@ -1,0 +1,28 @@
+.adopt-form  {
+  display: flex;
+  flex-direction: column;
+}
+
+.adopt-form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  text-align: left;
+  margin: auto;
+  width: 90%;
+}
+
+.adopt-form > div > input {
+  padding: .4rem;
+  border-radius: .2rem;
+  border: 2px solid darkorchid;
+  transition: ease-in 0.3s;
+}
+
+.adopt-form > div > input:focus {
+  border: 2px solid blue;
+}
+
+.adopt-form > div > p {
+  color: red;
+}
