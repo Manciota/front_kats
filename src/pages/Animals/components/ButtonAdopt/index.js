@@ -7,7 +7,7 @@ import { schema } from './adoption.schema'
 import './styles.css'
 import { usePets } from '../../../../hooks/usePets'
 
-export const ButtonAdopt = ({ petId }) => {
+export const ButtonAdopt = ({ pet }) => {
   const [, status, makeAdoption] = usePets()
   const [modalOpen, setModalOpen] = useState(false)
   const {
@@ -20,9 +20,12 @@ export const ButtonAdopt = ({ petId }) => {
     reValidateMode: 'onChange'
   })
 
+  const isDisabled = !isValid || !isDirty || status.loading
+  const isAdopted = pet.adopter_id
+
   const onSubmit = (data) => {
     handleToggleModal()
-    makeAdoption({ ...data, pet_id: petId })
+    makeAdoption({ ...data, pet_id: pet.id })
   }
 
   const handleToggleModal = () => {
@@ -31,7 +34,11 @@ export const ButtonAdopt = ({ petId }) => {
 
   return (
     <>
-      <Button title='Adotar' onClick={handleToggleModal} />
+      <Button
+        title={isAdopted ? 'Adotado' : 'Adotar'}
+        onClick={handleToggleModal}
+        disabled={isAdopted}
+      />
 
       <Modal open={modalOpen} setOpen={setModalOpen} title='Adote seu animal!'>
         <form onSubmit={handleSubmit(onSubmit)} className='adopt-form'>
@@ -59,11 +66,7 @@ export const ButtonAdopt = ({ petId }) => {
             <p>{errors.address?.message}</p>
           </div>
 
-          <Button
-            title='Confirmar'
-            type='submit'
-            disabled={!isValid || !isDirty || status === 'loading'}
-          />
+          <Button title='Confirmar' type='submit' disabled={isDisabled} />
         </form>
       </Modal>
     </>

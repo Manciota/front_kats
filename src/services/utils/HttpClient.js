@@ -14,6 +14,7 @@ class HttpClient {
   }
 
   async post(path, options) {
+    console.log(path, options)
     return this.makeRequest(path, {
       method: 'POST',
       body: options?.body,

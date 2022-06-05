@@ -16,15 +16,18 @@ export const usePets = () => {
     }
   }, [])
 
-  const makeAdoption = useCallback(async (adopterInfo) => {
-    try {
-      const data = await AdoptersService.makeAdoption(adopterInfo)
-      setPets(data)
-      setStatus('iddle')
-    } catch {
-      setStatus('error')
-    }
-  }, [])
+  const makeAdoption = useCallback(
+    async (adopterInfo) => {
+      try {
+        await AdoptersService.makeAdoption(adopterInfo)
+        await getAllPets()
+        setStatus('iddle')
+      } catch {
+        setStatus('error')
+      }
+    },
+    [getAllPets]
+  )
 
   useEffect(() => {
     getAllPets()

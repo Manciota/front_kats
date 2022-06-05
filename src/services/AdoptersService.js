@@ -6,8 +6,7 @@ class AdoptersService {
   }
 
   async makeAdoption(data) {
-    console.log(data)
-    return this.httpClient.post('/create', data)
+    return this.httpClient.post('/create', { body: data })
   }
 }
 

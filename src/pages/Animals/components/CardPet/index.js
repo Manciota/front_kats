@@ -27,6 +27,6 @@ export const CardPet = ({ pet }) => (
       </h2>
     </footer>
 
-    <ButtonAdopt petId={pet.id} />
+    <ButtonAdopt pet={pet} />
   </div>
 )
